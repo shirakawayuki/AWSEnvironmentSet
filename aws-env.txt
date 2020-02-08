@@ -1,0 +1,39 @@
+# Linux
+export AWS_ACCESS_KEY_ID=XXXXX
+export AWS_SECRET_ACCESS_KEY=XXXXX
+export AWS_DEFAULT_REGION=ap-northeast-1
+export AWS_DEFAULT_OUTPUT=json
+
+# コマンドプロンプト
+setx AWS_ACCESS_KEY_ID XXXXX
+setx AWS_SECRET_ACCESS_KEY XXXXX
+setx AWS_DEFAULT_REGION ap-northeast-1
+setx AWS_DEFAULT_OUTPUT json
+
+# PowerShell
+$Env:AWS_ACCESS_KEY_ID="XXXXX"
+$Env:AWS_SECRET_ACCESS_KEY="XXXXX"
+$Env:AWS_DEFAULT_REGION="ap-northeast-1"
+$Env:AWS_DEFAULT_OUTPUT="json"
+
+# 確認
+aws sts get-caller-identity
+
+# Region list
+us-east-1      # 米国東部（バージニア北部）
+us-east-2      # 米国東部（オハイオ）
+us-west-1      # 米国西部（北カリフォルニア）
+us-west-2      # 米国西部（オレゴン）
+ca-central-1   # カナダ (中部)
+eu-central-1   # 欧州（フランクフルト）
+eu-north-1     # 欧州（ストックホルム）
+eu-west-1      # 欧州（アイルランド）
+eu-west-2      # 欧州（ロンドン）
+eu-west-3      # 欧州（パリ）
+ap-northeast-1 # アジアパシフィック（東京）
+ap-northeast-2 # アジアパシフィック（ソウル）
+ap-northeast-3 # アジアパシフィック (大阪: ローカル)
+ap-southeast-1 # アジアパシフィック（シンガポール）
+ap-southeast-2 # アジアパシフィック（シドニー）
+ap-south-1     # アジアパシフィック (ムンバイ)
+sa-east-1      # 南米（サンパウロ）
